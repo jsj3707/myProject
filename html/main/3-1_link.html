@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type"
+    content="text/html;charset=utf-8" />
+    <meta name="dscription" content="링크태그에 대한 설명 및 예제">
+</head>
+
+<body>
+  <!-- a(앵커)태그 -->
+  <!--링크를 보여주기위한 태그. 문법설명은 아래에 적음.
+        <a href="URL"title="설명"target="문서가 로드될 대상">링크이름</a>
+    -->
+  <!-- href  :링크이름과 연결되어 있는 리소스(resource)의 주소-->
+  <!-- title :연결되어 있는 리소스에 대한 설명. 마우스 롤오버 했을때 툴팁으로 표시된다. -->
+  <!-- target:문서가 로드될 대상(쉽게 설명하면 링크문서를 어디서 열건지)으로 아래와 같은 것들이 있음.
+
+        1 _self  :현재의 문서가 로드된 프레임. 현재 문서 사라짐
+        2 _blank :새로운 창(탭)을 띄우고 거기에 문서를 로드
+        3 _parent:현재 문서가 frame이나 iframe에 로드된 경우 현재 문서를 로드한 프레임에
+                  문서를 로드
+        4 프레임의 이름 : 다른 프레임을 로드
+      -->
+  <p>
+    <a href="http://opentutorials.org/course/1">생활코딩</a> : 홈페이지로 이동한다.
+  </p>
+  <p>
+    <a href="http://opentutorials.org/course/1" target="_blank">생활코딩</a> : 새창에서 홈페이지를 연다.
+  </p>
+  <p>
+    <a href="http://opentutorials.org" target="_self">생활코딩</a> : 현재 프레임에서 생활코딩 홈페이지를 연다.
+  </p>
+  <p>
+    <a href="http://opentutorials.org" title="생활코딩 홈페이지">생활코딩</a> : 링크에 부가 설명을 추가한다. 링크에 툴팁을 표시한다.
+  </p>
+  <p>
+    <a href="http://opentutorials.org/course/11/10#reference" title="생활코딩 html이란 무엇인가 참조">HTML 소개</a> : 참조 부분으로 문서로 이동한다.
+  </p>
+
+
+</body>
+
+</html>

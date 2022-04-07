@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type"
+    content="text/html;charset=utf-8" />
+    <meta name="dscription" content="frame, frameset, iframe태그에 대한 설명 및 예제">
+</head>
+<frameset cols="30%, 70%">
+    <frameset rows="50%, 50%">
+        <frame src="contents_of_frame1.html" />
+        <frame src="contents_of_frame2.html" />
+    </frameset>
+    <frame name="content" src="contents_of_frame3.html" />
+    <noframes>
+        <!--iframe(inner frame) : 쉽게 생각하면 웹 페이지 안에 웹페이지를 넣는 기법.  -->
+        <!-- 최신버전의 html5에서는 지원안하는 경우도 있어서 크게 중요하지 않음. -->
+
+        <!-- 문법 -->
+        <!-- <iframe src="불러올 웹페이지의 URL" scrolling=""스크롤링허용여부 width="" height=""></iframe> -->
+        <!-- frame : 프레임은 아이프레임과 다르게 내부삽입개념보다는 전체 웹페이지를 프레임으로 씀. -->
+        <body>
+            <p>This frameset document contains</p>
+            <ul>
+                <li><a href="contents_of_frame1.html" target="content">contents_of_frame1.html</a></li>
+                <li><a href="contents_of_frame2.html"target="content">contents_of_frame1.htm2</a></li>
+                <li><a href="contents_of_frame3.html"target="content">contents_of_frame1.htm3</a></li>
+            ul>
+        </body>
+
+    </noframes>
+</frameset>
+
+</html>

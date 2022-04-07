@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="description" content="radio태그에 대한 설명 및 예제">
+        <title>radio</title>
+    </head>
+    <body>
+        <!-- 문법
+            <input type="radio" name="값의 이름" value="값" checked="checked">
+        -->
+        <!-- 항목을 입력할때 radio태그의 name이 같아야 묶이고 value는 각각 다른 값을 가져야함. -->
+        <form action="example_receive_single.php" method="POST">
+            관심사 : <br/>
+            <input type="radio" name="interest" value="programming" checked>프로그래밍<br/>
+            <input type="radio" name="interest" value="design" >디자인<br/>
+            <input type="radio" name="interest" value="planning" >기획<br/>
+            <input type="submit">
+        </form>
+    </body>
+</html>

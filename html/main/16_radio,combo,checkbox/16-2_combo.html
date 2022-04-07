@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="description" content="combo박스에 대한 설명 및 예제">
+        <title>combo</title>
+    </head>
+    <body>
+        <form action="example_receive_single.php" method="POST">
+            <!-- 문법
+                <select name="값의 이름" multiple="multiple">
+                <option value="선택될 경우 name의 값이 됨" selected="selected">값에 대한 표시값</option>
+            </select> -->
+            관심사 : <br>
+            <select name="interest">
+                <option value="programming">프로그래밍</option>
+                <option value="design" selected>디자인</option>
+                <option value="planning">기획</option>
+            </select>
+            <input type="submit">
+        </form>
+    </body>
+</html>

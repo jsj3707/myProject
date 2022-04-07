@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="description" content="check박스에 대한 설명 및 예제">
+        <title>checkbox</title>
+    </head>
+    <body>
+        <!-- 문법
+            <input type="checkbox" name="값의 이름" value="선택된것에 대한 값">
+            참고 name끝에[]를 붙이면 서버쪽에서 실행되는 언어가 이 값을 배열로 인식함
+            서버쪽에서 선택된 배열갯수 만큼 loop돌려서 처리가능.(서버로 값 전달 시 체크된 것만 보낸다.)
+        -->
+        <form action="example_receive_multi.php" method="post">
+            관심사 : <br>
+            <input type="checkbox" name="interest"[] value="programming">프로그래밍 <br/>
+            <input type="checkbox" name="interest"[] value="design" checked>디자인 <br/>
+            <input type="checkbox" name="interest"[] value="planning" checked>기획 <br/>
+            <input type="submit">
+        </form>
+    </body>
+</html>
