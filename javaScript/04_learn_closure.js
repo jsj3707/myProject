@@ -16,12 +16,21 @@ function outer() {
 outer();
 
 //예시 2 함수를 리턴하는 외부함수 선언
+<<<<<<< HEAD
 function outter() {
     var title = 'coding everybody';
     // return 하는 순간 외부함수는 죽지만 내부함수를 리턴함.
     return function() {
         alert(title);
     }
+=======
+function outter(){
+        var title = 'coding everybody';
+        // return 하는 순간 외부함수는 죽지만 내부함수를 리턴함.
+        return function(){
+            alert(title);
+        }
+>>>>>>> 96fd2d99ec40684dbaed100ac8fcf6f6341dbdc6
 }
 // 여기서 외부함수는 리턴하므로 죽음. 단, 내부함수를 리턴하기 때문에 inner를 호출하면 return 한 함수를 실행함.
 inner = outter();

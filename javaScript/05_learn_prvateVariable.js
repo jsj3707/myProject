@@ -2,12 +2,21 @@
 function factory_movie(title) {
     return {
         // 외부함수의 지역변수(매개변수)를 리턴함.
+<<<<<<< HEAD
         get_title: function() {
             return title;
         },
         // 외부함수의 지역변수(매개변수)에 value 설정함.
         set_title: function(_title) {
             if (typeof _title == 'String') {
+=======
+        get_title : function(){
+            return title;
+        },
+        // 외부함수의 지역변수(매개변수)에 value 설정함.
+        set_title : function(_title){
+            if(typeof _title == 'String'){
+>>>>>>> 96fd2d99ec40684dbaed100ac8fcf6f6341dbdc6
                 title = _title
             } else {
                 alert('제목은 문자열이어야 합니다.');
