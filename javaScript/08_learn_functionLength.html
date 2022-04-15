@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function zero() {
+            console.log(
+                'zero.length', zero.length, 'arguments', arguments.length
+            );
+        }
+        function one(arg1) {
+            console.log(
+                'one.length', one.length, 'arguments', arguments.length
+            );
+        }
+        function two(arg1, arg2) {
+            console.log(
+            'two.length'
+            , two.length
+            , 'arguments'
+            , arguments.length
+            );
+        }
+        // 인자와 매개변수를 비교할때 유용함.
+        // 함수를 만든사람의 의도와 사용자의 의도가 상이할 경우 비교해서 에러처리하면 좋음
+
+        zero(); // zero.length 0 arguments 0
+        one('val1', 'val2'); // one.length 1 arguments 2
+        two('val1'); // two.length 2 arguments 1
+    </script>
+</body>
+
+</html>
