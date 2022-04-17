@@ -10,3 +10,43 @@ function func() {
 }
 
 func();
+
+// 예시
+function cal() {
+    this.add = function() {
+        var _add = 0;
+        for (var i = 0; i < arguments.length; i++) {
+            _add += arguments[i];
+        }
+        return _add;
+    }
+
+    this.sub = function() {
+        var _sub = 0;
+        for (var i = 0; i < arguments.length; i++) {
+            _sub -= arguments[i];
+        }
+        return _sub;
+    }
+
+    this.mul = function(){
+        var _mul = 1;
+        for (var i = 0; i < arguments.length; i++) {
+            _mul = _mul * arguments[i];
+        }
+        _mul = Math.trunc(_mul,2);
+        return _mul;
+    }
+    
+    this.div = function(){
+        var  _div = arguments[0];
+        for (var i = 1; i < arguments.length; i++) {
+            if(arguments[i] === 0) {
+                return '0으로 나눌수 없습니다!'
+            }
+            _div = _div / arguments[i];
+        }
+        _mul = Math.trunc(_div,2);
+        return _div;
+    }
+}
